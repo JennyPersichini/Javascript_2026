@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(239, 170, 239);
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.carosello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewport {
+  position: relative;
+  width: 700px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.viewport img {
+  position: absolute;
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.imgCentrale {
+  z-index: 3;
+  transform: scale(1);
+  opacity: 1;
+}
+
+#precedente {
+  transform: translateX(-220px) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+#successiva {
+  transform: translateX(220px) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.freccia {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.freccia:hover {
+  transform: scale(1.2);
+}

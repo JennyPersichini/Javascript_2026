@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carosello</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="carosello">
+      <i class="fa-solid fa-chevron-left freccia" onclick="precedente()"></i>
+
+      <div class="viewport">
+        <img id="precedente" class="side" src="" alt="" />
+
+        <img id="immagine" class="imgCentrale" src="" alt="" />
+
+        <img id="successiva" class="side" src="" alt="" />
+      </div>
+
+      <i class="fa-solid fa-chevron-right freccia" onclick="successiva()"></i>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
