@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Numero Casuale</title>
+  </head>
+  <body>
+    <!--generare un numero casuale tra 1 e 10 inclusi tramite una funzione
+    mostrare il risulato del numero casuale in un p a schermo
+    scegliete voi se mostrare il res tramite bottone o meno-->
+
+    <button onclick="generaNumero()">Genera numero</button>
+
+    <p id="risultato"></p>
+
+    <script>
+      function generaNumero() {
+        // Numero casuale tra 1 e 10 inclusi
+        let numero = Math.floor(Math.random() * 10) + 1;
+
+        // Mostra il risultato nel paragrafo
+        document.getElementById("risultato").textContent = numero;
+      }
+    </script>
+  </body>
+</html>

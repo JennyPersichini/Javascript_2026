@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Somma Numeri</title>
+  </head>
+  <body>
+    <!--Prendete due input dall utente di due numeri uno decimale e uno intero 
+   e tramite button fate la somma con funzione 
+   e mostrare in pagina il risultato-->
+
+    <h2>Calcolo Somma</h2>
+    <button onclick="calcolaSomma()">Calcola Somma</button>
+
+    <p id="risultato"></p>
+
+    <script>
+      // funzione per sommare i numeri
+      function somma(a, b) {
+        return a + b;
+      }
+
+      function calcolaSomma() {
+        // input utente
+        let numeroDecimale = parseFloat(
+          prompt("Inserisci un numero decimale:"),
+        );
+        let numeroIntero = parseInt(prompt("Inserisci un numero intero:"));
+
+        // controllo base
+        if (isNaN(numeroDecimale) || isNaN(numeroIntero)) {
+          document.getElementById("risultato").innerText =
+            "Inserisci valori validi!";
+          return;
+        }
+
+        // calcolo
+        let risultato = somma(numeroDecimale, numeroIntero);
+
+        // output in pagina
+        document.getElementById("risultato").innerText =
+          "La somma è: " + risultato;
+      }
+    </script>
+  </body>
+</html>

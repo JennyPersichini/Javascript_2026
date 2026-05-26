@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mostra/Nascondi Div</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: none; 
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Creare due pulsanti : uno fa visualizzare il div in pagina di colore rosso; l'altro, lo nasconde-->
+    <button onclick="mostraDiv()">Mostra</button>
+    <button onclick="nascondiDiv()">Nascondi</button>
+
+    <div id="box"></div>
+
+    <script>
+      function mostraDiv() {
+        document.getElementById("box").style.display = "block";
+      }
+
+      function nascondiDiv() {
+        document.getElementById("box").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
