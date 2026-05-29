@@ -1,0 +1,11 @@
+Scrivi un programma chiamato FizzBuzz
+
+che stampi i numeri da 1 a 100 seguendo queste regole : 
+
+Se il numero è multiplo di 3 stampa Fizz
+
+Se è un multiplo di 5 stampa Buzz
+
+Se è multiplo di 3 e di 5 stampa FizzBuzz
+
+Altrimenti stampa semplicemente il numero

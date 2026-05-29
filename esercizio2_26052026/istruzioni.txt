@@ -1,0 +1,25 @@
+Il computer deve generare 16 numeri casuali da 1 a 100.
+
+in seguito deve chiedere all utente di inserire un numero da 1 a 100 alla volta.
+
+Se il numero è presente nella lista dei numeri generati,
+
+la partita termina, 
+
+altrimenti continua, chiedendo all utente un altro numero.
+
+La partita termina quando il giocatore inserisce un numero "vietato".
+
+    oppure
+
+raggiunge il numero massimo possibile di numeri consentiti.
+
+Al termine della partita il software deve comunicare il punteggio,
+
+cioè il numero di volte che l utente ha inserito un numero consentito.
+
+All inizio,il software chiede una difficoltà all utente, che cambia il range di numeri casuali.
+
+Con difficoltà 0 = > da 1 a 100
+               1 = > da 1 a 80
+               2 = > da 1 a 50
