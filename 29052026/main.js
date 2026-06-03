@@ -60,7 +60,7 @@ function mediaVoti() {
     media = 0;
   }
 
-  stampa("Media voti: " + media.toFixed(2));
+  stampa("Media voti: " + media.toFixed(1));
 }
 
 // 4 PRIMO STUDENTE
